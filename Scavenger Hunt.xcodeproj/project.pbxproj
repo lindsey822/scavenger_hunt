@@ -8,11 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		90C96BEF1C769CFE00677836 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90C96BEE1C769CFE00677836 /* AppDelegate.swift */; };
-		90C96BF11C769CFE00677836 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90C96BF01C769CFE00677836 /* ViewController.swift */; };
+		90C96BF11C769CFE00677836 /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90C96BF01C769CFE00677836 /* AddViewController.swift */; };
 		90C96BF41C769CFE00677836 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90C96BF21C769CFE00677836 /* Main.storyboard */; };
 		90C96BF61C769CFE00677836 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 90C96BF51C769CFE00677836 /* Images.xcassets */; };
 		90C96BF91C769CFE00677836 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 90C96BF71C769CFE00677836 /* LaunchScreen.xib */; };
 		90C96C051C769CFE00677836 /* Scavenger_HuntTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90C96C041C769CFE00677836 /* Scavenger_HuntTests.swift */; };
+		90C96C0F1C76AFA100677836 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90C96C0E1C76AFA100677836 /* ListViewController.swift */; };
+		90C96C111C76CAB000677836 /* ScavengerHuntItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90C96C101C76CAB000677836 /* ScavengerHuntItem.swift */; };
+		90C96C131C76E87000677836 /* ItemsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90C96C121C76E87000677836 /* ItemsManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,13 +32,16 @@
 		90C96BE91C769CFE00677836 /* Scavenger Hunt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Scavenger Hunt.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		90C96BED1C769CFE00677836 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		90C96BEE1C769CFE00677836 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		90C96BF01C769CFE00677836 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		90C96BF01C769CFE00677836 /* AddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
 		90C96BF31C769CFE00677836 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		90C96BF51C769CFE00677836 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		90C96BF81C769CFE00677836 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		90C96BFE1C769CFE00677836 /* Scavenger HuntTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Scavenger HuntTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		90C96C031C769CFE00677836 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		90C96C041C769CFE00677836 /* Scavenger_HuntTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scavenger_HuntTests.swift; sourceTree = "<group>"; };
+		90C96C0E1C76AFA100677836 /* ListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
+		90C96C101C76CAB000677836 /* ScavengerHuntItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScavengerHuntItem.swift; sourceTree = "<group>"; };
+		90C96C121C76E87000677836 /* ItemsManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemsManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,11 +84,14 @@
 			isa = PBXGroup;
 			children = (
 				90C96BEE1C769CFE00677836 /* AppDelegate.swift */,
-				90C96BF01C769CFE00677836 /* ViewController.swift */,
+				90C96BF01C769CFE00677836 /* AddViewController.swift */,
 				90C96BF21C769CFE00677836 /* Main.storyboard */,
+				90C96C0E1C76AFA100677836 /* ListViewController.swift */,
 				90C96BF51C769CFE00677836 /* Images.xcassets */,
 				90C96BF71C769CFE00677836 /* LaunchScreen.xib */,
 				90C96BEC1C769CFE00677836 /* Supporting Files */,
+				90C96C101C76CAB000677836 /* ScavengerHuntItem.swift */,
+				90C96C121C76E87000677836 /* ItemsManager.swift */,
 			);
 			path = "Scavenger Hunt";
 			sourceTree = "<group>";
@@ -212,8 +221,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				90C96BF11C769CFE00677836 /* ViewController.swift in Sources */,
+				90C96BF11C769CFE00677836 /* AddViewController.swift in Sources */,
+				90C96C111C76CAB000677836 /* ScavengerHuntItem.swift in Sources */,
 				90C96BEF1C769CFE00677836 /* AppDelegate.swift in Sources */,
+				90C96C0F1C76AFA100677836 /* ListViewController.swift in Sources */,
+				90C96C131C76E87000677836 /* ItemsManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
